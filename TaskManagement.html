@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  
+    Task: <input type="text" id="taskName" placeholder="title"/>
+    Date: <input type="date" id="date"/>
+    <button type="submit" onclick="handler.addTaskHandler()">Add Task</button><br/>
+    
+    <table></table>
+    <button type="button" onclick="handler.deleteTaskHandler()">Delete</button>
+    <button type="button" onclick="handler.changeStatus()">Change Status</button>
+    <select onchange="handler.filterTasks(this.value)">
+        <option value=1>ALL</option>
+        <option value=2>In Progress</option>
+        <option value=3>Completed</option>
+    </select>
+    <br/>
+    
+    
+    <script src="js/task.js"></script>
+</body>
+</html>
